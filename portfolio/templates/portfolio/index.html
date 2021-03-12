@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio of projects for Marius Grønli">
+    <meta name="author" content="Marius Grønli">
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto+Mono:wght@100&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Code by Marius</title>
+    <!-- Scroll animations  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  </head>
+
+
+  <body>
+    <div class="container-fluid">
+      <div class="user-nav">
+        <div class="logo">
+          <svg class="logo__icon">
+            <use xlink:href="../../static/img/sprite.svg#icon-display"></use>
+          </svg>
+        </div>
+        <nav class="navigation">
+          <ul class="list-unstyled navigation__list">
+            <li class="navigation__item"><a href="#my-stack" class="navigation__link">01. <span class="navigation__text">My stack</span> </a></li>
+            <li class="navigation__item"><a href="#projects" class="navigation__link">02. <span class="navigation__text">Projects</span></a></li>
+            <li class="navigation__item"><a href="#scripts" class="navigation__link">03. <span class="navigation__text">Scripts</span></a></li>
+            <li class="navigation__item"><a href="#contact" class="navigation__link">04. <span class="navigation__text">Contact</span></a></li>
+          </ul>
+        </nav>
+        <div class="contact">
+          <a href="{% url 'portfolio:cv'%}" class="btn-contact">Resume</a>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 text-box">
+            <p class="intro-text animate__animated animate__fadeInLeft">Hi! I'm Marius Grønli, a freelance developer.</p>
+            <p class="intro-text_2 animate__animated animate__fadeInLeft animate__delay-2s">I'm a self thought web developer and programmer.
+              My specialization is in business and finance with an MSc. in Finance.
+              Check out my projects on <a href="https://www.github.com/mariusgronli" class="intro-text_2--github">Github</a> or my career on
+              <a href="https://www.linkedin.com/in/marius-grønli-06509065" class="intro-text_2--linkedin">Linkedin</a>.</p>
+            <div class="text-box__button text-center animate__animated animate__fadeInLeft animate__delay-3s">
+              <a href="mailto:codebymarius@gmail.com" class="btn-contact">Contact me</a>
+            </div>
+          </div>
+          <div class="col-md-5 image-me animate__animated animate__fadeInRight animate__delay-2s">
+            <div class="image-me__border">
+              <div class="image-me__overlay">
+                <img src="{% static "img/meg.png" %}" alt="Picture of me" class="img-fluid image-me__picture">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section-stack" id="my-stack">
+        <div class="container">
+          <div class="row section-header">
+              <h2 class="section-header--text" data-aos="fade-up" data-aos-delay="500">
+                <span class="section-header--elm"><</span>
+                My stack
+                <span class="section-header--elm">></span>
+              </h2>
+          </div>
+          <div class="row card-section">
+            <div class="col-md-5 card-box">
+              <div class="flip-card"
+                data-aos="fade-up-right"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                >
+                <div class="flip-card__inner">
+                  <div class="flip-card__front flip-card__front--1">
+
+                      <h1 class="flip-card__front--1__header">
+                        <span class="flip-card__front--1__header--border">Frontend</span>
+                      </h1>
+
+                      <div class="flip-card__front--1__box">
+                        <svg class="flip-card__front--1__box--icon">
+                          <use xlink:href="../../static/img/icons-web-sprite.svg#html5"></use>
+                        </svg>
+                      </div>
+
+                      <h2 class="flip-card__front--1__sub-header">
+                        <span class="flip-card__front--1__sub-header--border">Design / formatting</span>
+                      </h2>
+                      <div class="flip-card__front--1__flex-container">
+                        <svg class="flip-card__front--1__box--icon">
+                          <use xlink:href="../../static/img/icons-web-sprite.svg#css-3"></use>
+                        </svg>
+                        <img src="{% static "img/sass-1.svg" %}" alt="Sass icon" class="flip-card__front--1__box--icon">
+                      </div>
+
+                      <h2 class="flip-card__front--1__sub-header">
+                        <span class="flip-card__front--1__sub-header--border">Responsive design</span>
+                      </h2>
+                      <div class="flip-card__front--1__box">
+                        <svg class="flip-card__front--1__box--icon">
+                          <use xlink:href="../../static/img/icons-web-sprite.svg#bootstrap"></use>
+                        </svg>
+                      </div>
+
+                      <h2 class="flip-card__front--1__sub-header">
+                        <span class="flip-card__front--1__sub-header--border">Preferred editor</span>
+                      </h2>
+                      <div class="flip-card__front--1__box">
+                        <svg class="flip-card__front--1__box--icon">
+                          <use xlink:href="../../static/img/icons-web-sprite.svg#atom"></use>
+                        </svg>
+                      </div>
+
+                  </div>
+                  <div class="flip-card__back flip-card__back--1">
+
+                    <h1 class="flip-card__back--1__header">
+                      <span class="flip-card__back--1__header--border">Backend</span>
+                    </h1>
+
+                    <div class="flip-card__back--1__box">
+                      <i class="fab fa-python flip-card__back--1__font-icon-python"></i>
+                    </div>
+
+                    <h2 class="flip-card__back--1__sub-header">
+                      <span class="flip-card__back--1__sub-header--border">Python packages used</span>
+                    </h2>
+
+                    <div class="flip-card__back--1__paragraph">
+                      <p><i class="fas fa-chevron-right flip-card__back--1__font-icon"></i>Django</p>
+                      <p><i class="fas fa-chevron-right flip-card__back--1__font-icon"></i>Rest framework</p>
+                    </div>
+
+                    <h2 class="flip-card__back--1__sub-header">
+                      <span class="flip-card__back--1__sub-header--border">Database used</span>
+                    </h2>
+
+                    <div class="flip-card__back--1__box">
+                      <svg class="flip-card__back--1__box--icon">
+                        <use xlink:href="../../static/img/icons-web-sprite.svg#sql-server"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 card-box card-box__responsive"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+              >
+              <p class="card-box__text text-center">Flip the cards</p>
+              <i class="fas fa-arrows-alt-h card-box__icon"></i>
+            </div>
+            <div class="col-md-5 card-box">
+              <div class="flip-card"
+                data-aos="fade-up-left"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                >
+                <div class="flip-card__inner">
+                  <div class="flip-card__front flip-card__front--2">
+                      <h1 class="flip-card__front--2__header">
+                        <span class="flip-card__front--1__header--border">Data analysis</span>
+                      </h1>
+                      <div class="flip-card__font--2__box">
+                        <i class="fab fa-python flip-card__front--2__font-icon-python"></i>
+                      </div>
+                      <h2 class="flip-card__front--2__sub-header">
+                        <span class="flip-card__front--2__sub-header--border">Python packages used</span>
+                      </h2>
+                      <div class="flip-card__back--1__paragraph">
+                        <p><i class="fas fa-chevron-right flip-card__back--1__font-icon"></i>Pandas</p>
+                        <p><i class="fas fa-chevron-right flip-card__back--1__font-icon"></i>Numpy</p>
+                        <p><i class="fas fa-chevron-right flip-card__back--1__font-icon"></i>Matplotlib</p>
+                        <p><i class="fas fa-chevron-right flip-card__back--1__font-icon"></i>SciPy</p>
+                        <p><i class="fas fa-chevron-right flip-card__back--1__font-icon"></i>beautifulsoup4</p>
+                        <p><i class="fas fa-chevron-right flip-card__back--1__font-icon"></i>Yfinance</p>
+                        <p><i class="fas fa-chevron-right flip-card__back--1__font-icon"></i>Statsmodel</p>
+                        <p><i class="fas fa-chevron-right flip-card__back--1__font-icon"></i>Zipline</p>
+                      </div>
+                  </div>
+                  <div class="flip-card__back flip-card__back--2">
+                    <h1 class="flip-card__back--2__header">
+                      <span class="flip-card__back--1__header--border">Other tools used</span>
+                    </h1>
+                    <div class="flip-card__back--2__box">
+                      <i class="fab fa-ravelry flip-card__back--2__font-icon"></i>
+                    </div>
+                    <div class="flip-card__back--2__box">
+                      <i class="fas fa-file-excel flip-card__back--2__font-icon"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row section-header">
+              <h2 class="section-header--text" data-aos="fade-up" data-aos-delay="500">
+                <span class="section-header--elm"><&sol; </span>
+                My stack
+                <span class="section-header--elm">></span>
+              </h2>
+          </div>
+        </div> <!-- End container -->
+      </div> <!-- End section -->
+      <div class="section-projects" id="projects">
+        <div class="container">
+          <div class="row section-header">
+              <h2 class="section-header--text" data-aos="fade-up" data-aos-delay="500">
+                <span class="section-header--elm"><</span>
+                Featured projects
+                <span class="section-header--elm">></span>
+              </h2>
+          </div>
+          <div class="row project" data-aos="fade-up" data-aos-delay="500">
+            <div class="col-lg">
+              <div class="project__overlay">
+                <img src="{% static "img/solvesundrehagen.jpg" %}" alt="Project picture Solve" class="img-fluid rounded project__overlay__scale">
+              </div>
+            </div>
+            <div class="col-lg project__flex-text-box">
+              <div class="row">
+                <div class="col-sm">
+                  <h4 class="project__header">Landing page / Store</h4>
+                </div>
+                <div class="col-sm text-right">
+                <a href="https://github.com/mariusgronli/solve_hjemmeside" class="project__link-icon project__link-icon--margin"><i class="fab fa-github"></i></a>
+                <a href="https://www.solvesundrehagen.com" class="project__link-icon"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+
+              <h3 class="project__subheader">Trening med mening</h3>
+              <p class="project__text">
+                A landing page for Sølve Sundrehagen. Sølve runs his own personal
+                training business where he does online training for all age groups.
+                The website is designed to be simple and informative with an easy
+                guide for signup. Currently working on extending the website to
+                sell training programs as well. I have designed and coded the website.
+              </p>
+              <div class="project__flex-icon-box">
+                <p><i class="fas fa-chevron-right project__icon"></i>HTML</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>CSS</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>VUE.JS</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>Django</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>Bootstrap</p>
+              </div>
+            </div>
+          </div> <!-- End project -->
+
+          <div class="row project u-margin-top-5" data-aos="fade-up" data-aos-delay="500">
+            <div class="col-lg">
+              <div class="project__overlay">
+                <img src="{% static "img/carolinenygren.jpg" %}" alt="Project picture Caroline" class="img-fluid rounded ">
+              </div>
+            </div>
+            <div class="col-lg project__flex-text-box">
+              <div class="row">
+                <div class="col-sm">
+                  <h4 class="project__header">Business site / booking</h4>
+                </div>
+                <div class="col-sm text-right">
+                <a href="https://github.com/mariusgronli/caroline-massage" class="project__link-icon project__link-icon--margin"><i class="fab fa-github"></i></a>
+                <a href="https://www.carolinenygren.no" class="project__link-icon"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+
+              <h3 class="project__subheader">Caroline Nygren</h3>
+              <p class="project__text">
+                Business site for Caroline Nygren. Caroline runs her own masseuse business.
+                The design is a collaboration with Caroline. The page includes
+                the core products information, as well as the option of buying
+                gift cards and booking of appointments.
+              </p>
+              <div class="project__flex-icon-box">
+                <p><i class="fas fa-chevron-right project__icon"></i>HTML</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>CSS</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>Pythonanywhere</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>Django</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>Bootstrap</p>
+              </div>
+            </div>
+          </div> <!-- End project -->
+
+          <div class="row project u-margin-top-5" data-aos="fade-up" data-aos-delay="500">
+            <div class="col-lg project__picture-box">
+              <div class="project__overlay">
+                <img src="{% static "img/journey.jpg" %}" alt="Project picture Journey AS" class="img-fluid rounded">
+              </div>
+            </div>
+            <div class="col-lg project__flex-text-box">
+              <div class="row">
+                <div class="col-sm">
+                  <h4 class="project__header">Web app / scraper</h4>
+                </div>
+                <div class="col-sm text-right">
+                <a href="https://github.com/mariusgronli/scraperapp" class="project__link-icon project__link-icon--margin"><i class="fab fa-github"></i></a>
+                <a href="https://www.mariusgronli.pythonanywhere.com" class="project__link-icon"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+
+              <h3 class="project__subheader">Journey AS</h3>
+              <p class="project__text">
+                Web app which includes a scraper to collect data. The current goal
+                is to collect as much data from the Norwegian real estate market
+                as possible to be able to provide statistical data for secondary
+                apps in the future. Currently the scraper scrapes all new ads
+                once a day from finn.no (the mayor real estate listing page in Norway).
+              </p>
+              <h4 class="project__subheader--2">features</h4>
+              <div class="project__feature__box">
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Scraper</p>
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Scraper diagnostics</p>
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Statistics</p>
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Data mapping by zip codes</p>
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Price calculator</p>
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Detail view market</p>
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Detail view ad</p>
+              </div>
+              <br>
+              <div class="project__flex-icon-box">
+                <p><i class="fas fa-chevron-right project__icon"></i>HTML</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>CSS</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>Python</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>Django</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>API serving</p>
+              </div>
+            </div>
+          </div> <!-- End project -->
+
+          <div class="row project u-margin-top-5" data-aos="fade-up" data-aos-delay="500">
+            <div class="col-lg project__picture-box">
+              <div class="project__overlay">
+                <img src="{% static "img/stockpage.jpg" %}" alt="Project picture Journey AS" class="img-fluid rounded">
+              </div>
+            </div>
+            <div class="col-lg project__flex-text-box">
+              <div class="row">
+                <div class="col-sm">
+                  <h4 class="project__header">Web app / finance</h4>
+                </div>
+                <div class="col-sm text-right">
+                <a href="#" class="project__link-icon project__link-icon--margin"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+
+              <h3 class="project__subheader">Journey AS</h3>
+              <p class="project__text">
+                Web app to calculate portfolio performance of stocks.
+                The app utilizes pandas in python to calculate different
+                statistical measurements of stock portfolios as well as
+                comparison to an index. Individual stocks are displayed as
+                colored cards and portfolio returns in a cumulative return
+                graph by using chart.js.
+              </p>
+              <h4 class="project__subheader--2">features</h4>
+              <div class="project__feature__box">
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Stock statistics</p>
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Index comparison</p>
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Color coded performance cards</p>
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Performance charts</p>
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Stock ticker validation</p>
+                <p class="project__feature__item"><i class="fas fa-chevron-right project__feature__icon"></i>Stock data from Yahoo finance</p>
+              </div>
+              <br>
+              <div class="project__flex-icon-box">
+                <p><i class="fas fa-chevron-right project__icon"></i>HTML</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>CSS</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>Python</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>Django</p>
+                <p><i class="fas fa-chevron-right project__icon"></i>Yfinance api</p>
+              </div>
+            </div>
+          </div> <!-- End project -->
+
+
+          <div class="row section-header">
+              <h2 class="section-header--text" data-aos="fade-up" data-aos-delay="500">
+                <span class="section-header--elm"><&sol;</span>
+                Featured projects
+                <span class="section-header--elm">></span>
+              </h2>
+          </div>
+        </div> <!-- End container -->
+      </div> <!-- End section -->
+      <div class="section-scripts" id="scripts">
+        <div class="container">
+
+          <div class="row section-header">
+              <h2 class="section-header--text" data-aos="fade-up" data-aos-delay="500">
+                <span class="section-header--elm"><</span>
+                Scripts
+                <span class="section-header--elm">></span>
+              </h2>
+          </div>
+
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 ">
+            <div class="col mb-4"
+              data-aos="fade-down"
+              data-aos-delay="600"
+              data-aos-duration="1000">
+                <div class="card shadow">
+                  <div class="card__header">
+                    <span class="card__link-icon"><i class="fas fa-scroll"></i></span>
+                    <a href="https://github.com/mariusgronli/stock-analysis-script" class="card__link-icon"><i class="fab fa-github"></i></a>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card__title">Ranking stocks after sharpe ratio</h4>
+                    <p class="card__text">The script takes in a list of sectors
+                      containing stock tickers the user wants to analyze.
+                      Then calculates statistical measurements to rank and sort
+                      the stocks. Outputs a list of stocks sorted after sector
+                      and sharpe ratio in excel file format.  </p>
+                  </div>
+                  <div class="card-footer card__footer">
+                    <p><i class="fas fa-chevron-right project__icon"></i>Python</p>
+                    <p><i class="fas fa-chevron-right project__icon"></i>Yfinance</p>
+                    <p><i class="fas fa-chevron-right project__icon"></i>Numpy</p>
+                    <p><i class="fas fa-chevron-right project__icon"></i>Math</p>
+                    <p><i class="fas fa-chevron-right project__icon"></i>Matplotlib</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col mb-4"
+              data-aos="fade-down"
+              data-aos-delay="700"
+              data-aos-duration="1000">
+              <div class="card shadow">
+                <div class="card__header">
+                  <span class="card__link-icon"><i class="fas fa-scroll"></i></span>
+                  <a href="https://github.com/mariusgronli/finance-scripts" class="card__link-icon"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="card-body">
+                  <h4 class="card__title">Financial analysis of stocks</h4>
+                  <p class="card__text">Scripts for different types of analysis of stocks.
+                    Includes BAM analysis, portfolio analysis of cumulative returns,
+                    future contract trading with margin requirements and time series
+                    analysis using an arima model.</p>
+                </div>
+                <div class="card-footer card__footer">
+                  <p><i class="fas fa-chevron-right project__icon"></i>Python</p>
+                  <p><i class="fas fa-chevron-right project__icon"></i>Pandas</p>
+                  <p><i class="fas fa-chevron-right project__icon"></i>Numpy</p>
+                  <p><i class="fas fa-chevron-right project__icon"></i>Statsmodel</p>
+                  <p><i class="fas fa-chevron-right project__icon"></i>Matplotlib</p>
+                  <p><i class="fas fa-chevron-right project__icon"></i>Zipline</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4"
+              data-aos="fade-down"
+              data-aos-delay="800"
+              data-aos-duration="1000">
+              <div class="card shadow">
+                <div class="card__header">
+                  <span class="card__link-icon"><i class="fas fa-scroll"></i></span>
+                  <a href="https://github.com/mariusgronli/scaper-housing-ads" class="card__link-icon"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="card-body">
+                  <h4 class="card__title">Scraper script of housing ads</h4>
+                  <p class="card__text">Script for scraper that scrapes finn.no
+                    for housing ads. The script includes validators, support functions,
+                    ad object to store scraped information, script to initialize
+                     scraping by inputting the ad-link. Used to build the scraper
+                     web app as well as testing. </p>
+                </div>
+                <div class="card-footer card__footer">
+                  <p><i class="fas fa-chevron-right project__icon"></i>Python</p>
+                  <p><i class="fas fa-chevron-right project__icon"></i>beautifulSoup</p>
+                  <p><i class="fas fa-chevron-right project__icon"></i>Unicode</p>
+                  <p><i class="fas fa-chevron-right project__icon"></i>Requests</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4"
+              data-aos="fade-down"
+              data-aos-delay="900"
+              data-aos-duration="1000">
+              <div class="card shadow">
+                <div class="card__header">
+                  <span class="card__link-icon"><i class="fas fa-scroll"></i></span>
+                  <a href="https://github.com/mariusgronli/booking-car-rental-script" class="card__link-icon"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="card-body">
+                  <h4 class="card__title">Rental car booking <system></system></h4>
+                  <p class="card__text">Script for car rental booking program includes
+                    the following modules: Vehicle, Vehicles, VehicleCosts, Reservation,
+                    System Interface, Rental agency UI as well as testing for
+                    each separate module. The program runs on a .txt based database. </p>
+                </div>
+                <div class="card-footer card__footer">
+                  <p><i class="fas fa-chevron-right project__icon"></i>Python</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row section-header">
+              <h2 class="section-header--text" data-aos="fade-up" data-aos-delay="500">
+                <span class="section-header--elm"><&sol;</span>
+                scripts
+                <span class="section-header--elm">></span>
+              </h2>
+          </div>
+
+        </div> <!-- End container -->
+      </div> <!-- End Section -->
+      <div class="section-contact" id="contact">
+        <div class="container">
+          <div class="row section-header">
+              <h2 class="section-header--text" data-aos="fade-up" data-aos-delay="500">
+                <span class="section-header--elm"><</span>
+                Contact
+                <span class="section-header--elm">></span>
+              </h2>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <h3 class="contact__header" data-aos="fade-up" data-aos-delay="500">
+                How to reach me
+              </h3>
+              <p class="contact__text u-margin-top-2" data-aos="fade-up" data-aos-delay="500">
+                I'm currently doing freelance work and always ready for a new project!
+                If you are looking for a junior webdeveloper or data analyst please drop me an email.
+                You can always reach me on <span class="contact__highlight">codebymarius@gmail.com</span> or press the mail button.
+              </p>
+              <div class="text-box__button text-center" data-aos="fade-up" data-aos-delay="500">
+                <a href="mailto:codebymarius@gmail.com" class="btn-contact">Mail me</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="row section-header">
+              <h2 class="section-header--text" data-aos="fade-up" data-aos-delay="500">
+                <span class="section-header--elm"><&sol;</span>
+                Contact
+                <span class="section-header--elm">></span>
+              </h2>
+          </div>
+        </div> <!-- End container -->
+      </div> <!-- End Section -->
+    </main> <!-- End Main -->
+    <footer class="u-margin-top-3">
+      <div class="section-footer">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm footer__text-box">
+              <p class="footer__text">Designed and built by <span class="footer__highlight--1">Marius Grønli</span>.</p>
+              <p class="footer__text">Coded with <span class="footer__highlight--2">HTML</span>,
+                <span class="footer__highlight--2">SASS</span> and
+                <span class="footer__highlight--2">Django</span>.
+              </p>
+
+            </div>
+            <div class="col-sm footer__icon-box">
+              <a href="https://www.github.com/mariusgronli" class="footer__icon footer__icon--1"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/marius-grønli-06509065" class="footer__icon footer__icon--2"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/mariusgron/" class="footer__icon footer__icon--3"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script>AOS.init();</script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  </body>
+</html>

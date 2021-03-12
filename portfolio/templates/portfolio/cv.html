@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio of projects for Marius Grønli">
+    <meta name="author" content="Marius Grønli">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>CV Marius Grønli</title>
+  </head>
+
+  <body style="background-color:#191717;">
+    <div class="container">
+      <div class="row u-margin-top-5 text-center" style="margin-bottom:4rem;display:flex;justify-content:center;">
+          <a href="{% url 'portfolio:homepage'%}" class="btn-contact">Go back</a>
+      </div>
+      <div class="row">
+        <iframe src="https://drive.google.com/file/d/1K4Pa6puRN9H2qzll5Uccl7wXwWAQYUUQ/preview" width="640" height="480" style="width:100%;height:1000px;border:none;"></iframe>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,84 @@
+.user-nav{
+  padding: 2rem;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header{
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+
+}
+
+.section-header{
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+
+  &--text{
+    font-family: 'DotGothic16', sans-serif !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    color: white;
+    font-size: 3rem;
+    margin: 5rem 0;
+
+    display: flex;
+    justify-content: center;
+  }
+  &--elm{
+    color: var(--color-primary);
+  }
+}
+
+.section-stack{
+  padding: 10rem 0;
+  background-color: var(--color-grey-dark-2);
+  -webkit-clip-path: polygon(50% 8%, 100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
+  clip-path: polygon(50% 8%, 100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
+
+  @include respond(rmedium){
+    padding: 12rem;
+  }
+}
+
+.section-projects{
+  padding: 5rem 0;
+}
+
+.section-scripts{
+  padding: 5rem 0;
+  background-color: var(--color-grey-dark-2);
+  -webkit-clip-path: polygon(50% 8%, 100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
+  clip-path: polygon(50% 8%, 100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
+}
+
+.section-contact{
+  padding: 5rem 0;
+}
+
+.section-footer{
+  padding: 4rem 0;
+  background-color: var(--color-grey-dark-2);
+  -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 10%);
+  clip-path: polygon(50% 0, 100% 5%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 5%);
+}
+
+/////////////////////////////////////////
+//Utility classes
+
+.u-margin-top-2{
+  margin-top: 2rem;
+}
+
+.u-margin-top-3{
+  margin-top: 3rem;
+}
+
+.u-margin-top-5{
+  margin-top: 5rem;
+}
