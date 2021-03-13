@@ -5,6 +5,9 @@
   @include respond(rmedium){
     font-size: 1.5rem;
   }
+  @include respond(rsmall){
+    font-size: 1.2rem;
+  }
 
   display: flex;
   align-items: center;

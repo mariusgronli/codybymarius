@@ -65,6 +65,9 @@ body {
   @media (max-width: 48em) {
     .user-nav {
       font-size: 1.5rem; } }
+  @media (max-width: 36em) {
+    .user-nav {
+      font-size: 1.2rem; } }
 
 .header {
   margin-top: 15rem;
@@ -128,8 +131,8 @@ body {
   fill: var(--color-primary); }
   @media (max-width: 36em) {
     .logo__icon {
-      width: 3rem;
-      height: 3rem; } }
+      width: 2.5rem;
+      height: 2.5rem; } }
 
 .navigation {
   font-family: 'DotGothic16', sans-serif;
