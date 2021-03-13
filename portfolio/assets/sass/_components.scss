@@ -7,6 +7,11 @@
     width: 4rem;
     height: 4rem;
     fill: var(--color-primary);
+
+    @include respond(rsmall){
+      width: 3rem;
+      height: 3rem;
+    }
   }
 }
 
@@ -33,7 +38,6 @@
     transition: width 0s .5s,
                 height 0s .5s;
     position: relative;
-
   }
 
   &__link::before{
@@ -54,6 +58,9 @@
   }
   &__text{
     color: #fff;
+    @include respond(rsmall){
+      display: block;
+    }
   }
 }
 
@@ -481,7 +488,10 @@
 .project{
   padding: 5rem;
   border: solid 1px var(--color-primary);
-  transition: all .3s; 
+  transition: all .3s;
+  @include respond(rsmall){
+    padding: 3rem;
+  }
 
   &:hover{
     border: solid 1px var(--color-pink-primary);
